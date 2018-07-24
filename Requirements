@@ -1,0 +1,4 @@
+requests==2.18.4
+pendulum==2.0.1
+user-agent==0.1.9
+nose
