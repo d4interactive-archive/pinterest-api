@@ -14,7 +14,11 @@ Right now It only offers wrapper on few major things like
 
 #How to use it
 
-install it using pip install pinpy
+install it using pip
+
+    pip install pin-py
+
+usage
 
     from pin_py.pinterest.pinpy import PinPy;
 

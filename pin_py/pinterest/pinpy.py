@@ -70,7 +70,7 @@ class PinPy:
 
             if "page" in json_object:
                 url = json_object["page"]["next"]
-                url = None  # JUST FOR DEBUGGINJ
+                #url = None  # JUST FOR DEBUGGINJ
             else:
                 url = None
 
