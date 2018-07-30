@@ -12,7 +12,7 @@ Right now It only offers wrapper on few major things like
 - [ ]    Using these Pin ids to get further information about specific Pin
 
 
-#How to use it
+#How to use itt
 
 install it using pip
 
@@ -20,10 +20,10 @@ install it using pip
 
 usage
 
-    from pin_py.pinterest.pinpy import PinPy;
+    from pin_py.pinterest.pinpy import PinPy
 
     pin = PinPy()
-    pins_list = pin.get_details_of_all_pins("access_token");
-
+    pins_list = pin.get_details_of_all_pins("access_token")
+    
     for pin_one in pins_list:
         print(pin.get_single_pin_details(pin_one,"access_token"))

@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="pin_py",
-    version="0.0.5",
+    version="0.0.6",
     author="Hassan Alvi",
     author_email="hassan.awan@d4interactive.io",
     description="Python wrapper for pinterest API",

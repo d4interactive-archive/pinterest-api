@@ -35,7 +35,7 @@ class MyTestCase(unittest.TestCase):
                     pass;
                 else:
                     self.fail("pins are corrupt")
-            self.assertEqual(True, True);
+            self.assertEqual(True, True)
         else:
             self.fail("Null object is received")
 
