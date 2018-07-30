@@ -12,7 +12,7 @@ Right now It only offers wrapper on few major things like
 - [ ]    Using these Pin ids to get further information about specific Pin
 
 
-#How to use itt
+#How to use it
 
 install it using pip
 
