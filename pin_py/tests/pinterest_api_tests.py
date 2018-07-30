@@ -1,6 +1,6 @@
 import unittest
-from pinterest.pinpy import PinPy
-
+from pin_py.pinterest.pinpy import PinPy
+from pin_py.utils.config import access_token
 
 def RepresentsInt(s):
     try:
@@ -10,7 +10,7 @@ def RepresentsInt(s):
         return False
 
 
-access_token = "AeSNbHAlqm44R2u748yqrgJiZWjzFKi37tKqdLdD1NITIuAxeQAAAAA"
+
 
 
 class MyTestCase(unittest.TestCase):
@@ -39,5 +39,5 @@ class MyTestCase(unittest.TestCase):
         else:
             self.fail("Null object is received")
 
-# if __name__ == '__main__':
-#     unittest.main()
+    def test_fail(self):
+        self.fail("I am failed")

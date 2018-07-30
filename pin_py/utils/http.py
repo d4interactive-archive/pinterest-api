@@ -9,11 +9,9 @@ except ImportError:
 
 import urllib3
 import logging
-import pendulum
 
-
-from urllib.parse import urljoin, urlparse
-from utils.settings import HEADERS_DEFAULT, PROXIES_LIST
+from urllib.parse import urljoin
+from pin_py.utils.settings import HEADERS_DEFAULT, PROXIES_LIST
 
 log = logging.getLogger('HTTP')
 

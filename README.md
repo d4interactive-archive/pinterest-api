@@ -16,4 +16,10 @@ Right now It only offers wrapper on few major things like
 
 install it using pip install pinpy
 
-import PinPy() from pinterest.pinpy
+    from pin_py.pinterest.pinpy import PinPy;
+
+    pin = PinPy()
+    pins_list = pin.get_details_of_all_pins("access_token");
+
+    for pin_one in pins_list:
+        print(pin.get_single_pin_details(pin_one,"access_token"))

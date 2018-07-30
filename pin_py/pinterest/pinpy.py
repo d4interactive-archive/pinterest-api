@@ -1,9 +1,7 @@
 # Author Hassan Alvi
 # Creation date : 20th July 2018
 
-from utils.http import Requests
-
-
+from pin_py.utils.http import Requests
 
 try:
     import simplejson as json
@@ -11,9 +9,7 @@ except ImportError:
     import json
 
 
-
 class PinPy:
-
     pinterest_url = "https://api.pinterest.com/"
 
     def __init__(self):
@@ -41,7 +37,7 @@ class PinPy:
             return ' pin_id or access_token is wrong'
 
         pinterest_url = 'https://api.pinterest.com/v1/pins/{0}/?access_token={1}&fields=counts,board,creator,' \
-                        'created_at,media'.format(pin_id, access_token)
+                        'created_at,media,note'.format(pin_id, access_token)
         request = self.request.get(pinterest_url)
         if request.status_code != 200:
             json_object = json.loads(request.text)
@@ -74,7 +70,7 @@ class PinPy:
 
             if "page" in json_object:
                 url = json_object["page"]["next"]
-                # url = None  # JUST FOR DEBUGGINJ
+                url = None  # JUST FOR DEBUGGINJ
             else:
                 url = None
 
@@ -89,11 +85,3 @@ class PinPy:
             return None
         json_object = json.loads(request.text)
         return json_object
-
-
-
-
-
-if __name__ == "__main__":
-    pin = PinPy()
-    print(pin.authorize("AeSNbHAlqm44R2u748yqrgJiZWjzFKi37tKqdLdD1NITIuAxeQAAAAA"))
